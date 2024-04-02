@@ -71,7 +71,7 @@ Plug 'Shobhit-Nagpal/nvim-rafce'
 
 ## Commands
 
-There are 4 different commands to use depending on your needs:
+There are 3 different commands to use depending on your needs:
 
 **i.** Rafce (React functional component with arrow function and export at bottom)
 
@@ -89,21 +89,7 @@ const Component = () => {
 export default Component;
 ```
 
-**ii.** Rafc (React functional component with arrow function)
-
-```vim
-:Rafc
-```
-
-```jsx
-import React from 'react';
-
-export default const Component = () => {
-  return <div>Component</div>;
-};
-```
-
-**iii.** Rfce (React functional component with export at bottom)
+**ii.** Rfce (React functional component with export at bottom)
 
 ```vim
 :Rfce
@@ -119,7 +105,7 @@ function Component() {
 export default Component;
 ```
 
-**iv.** Rfc (React functional component)
+**iii.** Rfc (React functional component)
 
 ```vim
 :Rfc

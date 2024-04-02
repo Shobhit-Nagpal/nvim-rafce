@@ -11,10 +11,12 @@
 </div>
 
 ## TOC
-* [Problem](#Problem)
-* [Solution](#Solutions)
-* [Installation](#Installation)
-* [Commands](#Commands)
+
+- [Problem](#Problem)
+- [Solution](#Solutions)
+- [Installation](#Installation)
+- [Commands](#Commands)
+- [Socials](#Socials)
 
 ## Problem
 
@@ -62,6 +64,7 @@ use 'Shobhit-Nagpal/nvim-rafce'
 ```
 
 --Vim-plug:
+
 ```lua
 Plug 'Shobhit-Nagpal/nvim-rafce'
 ```
@@ -77,7 +80,7 @@ There are 4 different commands to use depending on your needs:
 ```
 
 ```jsx
-import React from 'react';
+import React from "react";
 
 const Component = () => {
   return <div>Component</div>;
@@ -107,11 +110,11 @@ export default const Component = () => {
 ```
 
 ```jsx
-import React from 'react';
+import React from "react";
 
 function Component() {
-    return <div>Component</div>;
-};
+  return <div>Component</div>;
+}
 
 export default Component;
 ```
@@ -123,9 +126,13 @@ export default Component;
 ```
 
 ```jsx
-import React from 'react';
+import React from "react";
 
 export default function Component() {
-    return <div>Component</div>;
-};
+  return <div>Component</div>;
+}
 ```
+
+## Socials
+
+- [Twitter](https://twitter.com/shbhtngpl)

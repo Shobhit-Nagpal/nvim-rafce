@@ -2,7 +2,7 @@
 
 # Nvim-Rafce
 
-##### Write boilerplate components with one command
+##### Write boilerplate React components with one command
 
 [![Lua](https://img.shields.io/badge/Lua-blue.svg?style=for-the-badge&logo=lua)](http://www.lua.org)
 [![Neovim](https://img.shields.io/badge/Neovim%200.5+-green.svg?style=for-the-badge&logo=neovim)](https://neovim.io)
@@ -11,7 +11,7 @@
 
 ## Problem:
 
-1. You left behind VSCode and installed Neovim and are new to learning Vim motions, remaps, plugins, etc. You saw either yourself or other people using the RFCE snippet to create boilerplate code. You want to save time by having something similar for Neovim.
+1. You left behind VSCode and installed Neovim and are new to learning Vim motions, remaps, plugins, etc. You saw either yourself or other people using the RAFCE snippet to create boilerplate React component code. You want to save time by having something similar for Neovim.
 
 ## Solution:
 
@@ -48,23 +48,22 @@ local rafce = require('rafce')
 
 ### 2. Plugin manager
 
-With Packer:
+--Packer:
 
 ```lua
 use 'Shobhit-Nagpal/nvim-rafce'
 ```
 
-Sync
-
-```vim
-:PackerSync
+--Vim-plug:
+```lua
+Plug 'Shobhit-Nagpal/nvim-rafce'
 ```
 
 ## Commands:
 
 There are 4 different commands to use depending on your needs:
 
-i. Rafce (React functional component with arrow function and export at bottom)
+**i.** Rafce (React functional component with arrow function and export at bottom)
 
 ```vim
 :Rafce
@@ -80,7 +79,7 @@ const Component = () => {
 export default Component;
 ```
 
-ii. Rafc (React functional component with arrow function)
+**ii.** Rafc (React functional component with arrow function)
 
 ```vim
 :Rafc
@@ -94,7 +93,7 @@ export default const Component = () => {
 };
 ```
 
-iii. Rfce (React functional component with export at bottom)
+**iii.** Rfce (React functional component with export at bottom)
 
 ```vim
 :Rfce
@@ -110,7 +109,7 @@ function Component() {
 export default Component;
 ```
 
-iv. Rfc (React functional component)
+**iv.** Rfc (React functional component)
 
 ```vim
 :Rfc

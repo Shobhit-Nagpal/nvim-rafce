@@ -63,20 +63,6 @@ local function writeRafceComponent(componentName)
 
 end
 
-local function writeRafcComponent(componentName)
-
-  lines = {
-  "import React from 'react';",
-  "",
-  "export default const " ..componentName.. " = () => {", 
-  "  return <div>" ..componentName.. "</div>;",
-  "};",
-  }
-
-  vim.api.nvim_buf_set_lines(0, 0, -1, false, lines)
-
-end
-
 local function writeRfceComponent(componentName)
 
   lines = {
@@ -109,7 +95,6 @@ end
 return {
   getComponentName = getComponentName,
   writeRafceComponent = writeRafceComponent,
-  writeRafcComponent = writeRafcComponent,
   writeRfceComponent = writeRfceComponent,
   writeRfcComponent = writeRfcComponent,
 }

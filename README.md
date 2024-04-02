@@ -1,6 +1,7 @@
 <div align="center">
 
 # Nvim-Rafce
+
 ##### Write boilerplate components with one command
 
 [![Lua](https://img.shields.io/badge/Lua-blue.svg?style=for-the-badge&logo=lua)](http://www.lua.org)
@@ -46,3 +47,79 @@ local rafce = require('rafce')
 ```
 
 ### 2. Plugin manager
+
+With Packer:
+
+```lua
+use 'Shobhit-Nagpal/nvim-rafce'
+```
+
+Sync
+
+```vim
+:PackerSync
+```
+
+## Commands:
+
+There are 4 different commands to use depending on your needs:
+
+i. Rafce (React functional component with arrow function and export at bottom)
+
+```vim
+:Rafce
+```
+
+```jsx
+import React from 'react';
+
+const Component = () => {
+  return <div>Component</div>;
+};
+
+export default Component;
+```
+
+ii. Rafc (React functional component with arrow function)
+
+```vim
+:Rafc
+```
+
+```jsx
+import React from 'react';
+
+export default const Component = () => {
+  return <div>Component</div>;
+};
+```
+
+iii. Rfce (React functional component with export at bottom)
+
+```vim
+:Rfce
+```
+
+```jsx
+import React from 'react';
+
+function Component() {
+    return <div>Component</div>;
+};
+
+export default Component;
+```
+
+iv. Rfc (React functional component)
+
+```vim
+:Rfc
+```
+
+```jsx
+import React from 'react';
+
+export default function Component() {
+    return <div>Component</div>;
+};
+```

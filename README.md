@@ -9,15 +9,21 @@
 
 </div>
 
-## Problem:
+## TOC
+* [Problem](#-Problem)
+* [Solution](#-Solutions)
+* [Installation](#-Installation)
+* [Commands](#-Commands)
+
+## Problem
 
 1. You left behind VSCode and installed Neovim and are new to learning Vim motions, remaps, plugins, etc. You saw either yourself or other people using the RAFCE snippet to create boilerplate React component code. You want to save time by having something similar for Neovim.
 
-## Solution:
+## Solution
 
 1. The ability to write a command in Neovim and have boilerplate component code on the fly.
 
-## Installation:
+## Installation
 
 Installation can be done in 2 ways:
 
@@ -59,7 +65,7 @@ use 'Shobhit-Nagpal/nvim-rafce'
 Plug 'Shobhit-Nagpal/nvim-rafce'
 ```
 
-## Commands:
+## Commands
 
 There are 4 different commands to use depending on your needs:
 

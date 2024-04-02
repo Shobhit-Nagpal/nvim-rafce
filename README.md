@@ -10,10 +10,10 @@
 </div>
 
 ## TOC
-* [Problem](#-Problem)
-* [Solution](#-Solutions)
-* [Installation](#-Installation)
-* [Commands](#-Commands)
+* [Problem](#Problem)
+* [Solution](#Solutions)
+* [Installation](#Installation)
+* [Commands](#Commands)
 
 ## Problem
 

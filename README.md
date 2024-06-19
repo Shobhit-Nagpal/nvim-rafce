@@ -57,13 +57,23 @@ local rafce = require('rafce')
 
 ### 2. Plugin manager
 
---Packer:
+-- Lazy.nvim:
+
+```lua
+{'Shobhit-Nagpal/nvim-rafce',
+  config = function()
+      require('rafce')
+  end,
+}
+```
+
+-- Packer:
 
 ```lua
 use 'Shobhit-Nagpal/nvim-rafce'
 ```
 
---Vim-plug:
+-- Vim-plug:
 
 ```lua
 Plug 'Shobhit-Nagpal/nvim-rafce'

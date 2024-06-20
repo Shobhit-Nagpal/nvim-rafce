@@ -24,11 +24,11 @@ local function dump(o)
    end
 end
 
-local function isLineEmpty() {
+local function isLineEmpty()
   currentLine = vim.api.nvim_get_current_line()
   isEmpty = currentLine == ""
   return isEmpty
-}
+end
 
 local function getComponentName(filename)
 

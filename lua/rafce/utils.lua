@@ -25,8 +25,8 @@ local function dump(o)
 end
 
 local function isLineEmpty()
-  currentLine = vim.api.nvim_get_current_line()
-  isEmpty = currentLine == ""
+  local currentLine = vim.api.nvim_get_current_line()
+  local isEmpty = currentLine == ""
   return isEmpty
 end
 

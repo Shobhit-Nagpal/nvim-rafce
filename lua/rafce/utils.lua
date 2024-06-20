@@ -24,6 +24,12 @@ local function dump(o)
    end
 end
 
+local function isLineEmpty() {
+  currentLine = vim.api.nvim_get_current_line()
+  isEmpty = currentLine == ""
+  return isEmpty
+}
+
 local function getComponentName(filename)
 
   fileParts = split(filename, "/")
@@ -92,9 +98,31 @@ local function writeRfcComponent(componentName)
   vim.api.nvim_buf_set_lines(0, 0, -1, false, lines)
 
 end
+
+local function writeUseEffectSnippet()
+
+  lines = {
+  "useEffect(() => {",
+  "",
+  "}, []);",
+  }
+
+  if isLineEmpty() then
+    vim.api.nvim_set_current_line(table.concat(lines, "\n"))
+  else
+    local cursor_position = vim.api.nvim_win_get_cursor(0)
+    local row = cursor_position[1]
+
+    vim.api.nvim_buf_set_lines(0, row, row, false, {""})
+    vim.api.nvim_buf_set_lines(0, row + 1, row + 1, false, lines)
+    vim.api.nvim_win_set_cursor(0, {row + 2, 2})
+  end
+
+end
 return {
   getComponentName = getComponentName,
   writeRafceComponent = writeRafceComponent,
   writeRfceComponent = writeRfceComponent,
   writeRfcComponent = writeRfcComponent,
+  writeUseEffectSnippet = writeUseEffectSnippet,
 }

@@ -29,3 +29,11 @@ vim.api.nvim_create_user_command(
   end,
   {bang = true, desc = "Command to create boilerplate code of a React functional component."}
 )
+
+vim.api.nvim_create_user_command(
+"Ue",
+function()
+  utils.writeUseEffectSnippet()
+end,
+{bang = true, desc = "Command to write out an empty useEffect snippet"}
+)
